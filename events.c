@@ -22,7 +22,7 @@ int RollingDice() {
 /**
  * Creating the beach event when someone enters the beach
  */
-void beach(Gameplay *Settings, Team *head) {
+void beach(Gameplay *Settings, Team head) {
   i32 DiceRoll = RollingDice();
   switch (DiceRoll) {
   case 1:
@@ -68,7 +68,7 @@ void beach(Gameplay *Settings, Team *head) {
 /**
  * Forest event implementation
  */
-void forest(Gameplay *Settings, Team *head, Expedition_Castaway) {
+void forest(Gameplay *Settings, Team head, Expedition_Castaway) {
   i32 RollDice = RollingDice();
   switch (RollDice) {
   case 1:
@@ -151,7 +151,7 @@ void forest(Gameplay *Settings, Team *head, Expedition_Castaway) {
 /**
  * Implementing the swamp
  */
-void swamp(Gameplay *Settings, Team *head, Expedition_Castaway) {
+void swamp(Gameplay *Settings, Team head, Expedition_Castaway) {
   i32 Rolldice = RollingDice();
   switch (RollDice) {
   case 1:
@@ -193,7 +193,7 @@ void swamp(Gameplay *Settings, Team *head, Expedition_Castaway) {
 /**
  * Implementation of the shipwreck event
  */
-void shiprwreck(Gameplay *Settings, Team *head, Expedition_Castaway) {
+void shiprwreck(Gameplay *Settings, Team head, Expedition_Castaway) {
   Expedition_Castaway->Castaway_health =
       Expedition_Castaway->Castaway_health - 2;
   if (Expedition_Castaway->Castaway_health <= 0) {
@@ -230,7 +230,7 @@ b8 fibonacci_sequence(i32 FibonacciInt) {
 /**
  * Implementation of the Coral Cave using the fibonacci sequence above
  */
-void Coral_Cave(Gameplay *Settings, Team *head, Expedition_Castaway) {
+void Coral_Cave(Gameplay *Settings, Team head, Expedition_Castaway) {
   i32 FibonacciInt = rand() % 500 + 1;
   b8 fibonacciBelong = fibonacci_sequence(FibonacciInt);
   b8 option = 0;
@@ -255,7 +255,7 @@ void Coral_Cave(Gameplay *Settings, Team *head, Expedition_Castaway) {
 /**
  * Implementation of the Jaguar's Den
  */
-void Jaguar_Den(Gameplay *Setting, Team *head, Expedition_Castaway) {
+void Jaguar_Den(Gameplay *Setting, Team head, Expedition_Castaway) {
   i32 DiceRoll = RollingDice();
   i32 TotalDamage = 0;
   while (DiceRoll < JAGUAR_FATAL) {
