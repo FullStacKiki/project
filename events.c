@@ -22,7 +22,7 @@ int RollingDice() {
 /**
  * Creating the beach event when someone enters the beach
  */
-void beach(Gameplay *Settings, Team head) {
+void beach(Gameplay *Settings, Team head, Expedition_Castaway) {
   i32 DiceRoll = RollingDice();
   switch (DiceRoll) {
   case 1:

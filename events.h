@@ -1,3 +1,7 @@
+/**
+ * Including libraries needed for the
+ * development of other functions
+ */
 #include "team.h"
 #include "types.h"
 #include "utils.h"
@@ -6,7 +10,7 @@
  *Declaring all functions of the other file
  */
 int RollingDice();
-void beach(*Settings, head);
+void beach(*Settings, head, Expedition_Castaway);
 void forest(*Settings, head, Expedition_Castaway);
 void swamp(*Settings, head, Expedition_Castaway);
 void shiprwreck(*Settings, head, Expedition_Castaway);
