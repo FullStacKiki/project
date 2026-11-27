@@ -215,12 +215,12 @@ b8 fibonacci_sequence(i32 FibonacciInt) {
   i32 t_2 = 1;
   t_i = 0;
   b8 fibonacci = 0;
-  for (i32 i = 0; t_i < 500; i++) {
+  while (t_i < 500) {
     t_i = t_2 + t_1 + t_0;
     t_2 = t_i;
     t_1 = t_2;
     t_0 = t_1;
-    if (FibonacciInt = t_i) {
+    if (FibonacciInt == t_i) {
       fibonacci = 1;
       return fibonacci;
     }
